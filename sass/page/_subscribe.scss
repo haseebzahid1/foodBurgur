@@ -1,0 +1,84 @@
+.subscribe{
+    background-color: whitesmoke;
+    &__subscribe-container{
+        padding: 208px 15px 202px 15px;
+        width: 100%;
+        max-width: 800px;
+        margin-left: auto;
+        margin-right: auto;
+        border: 1px solid red;
+        text-align: center;
+    }
+    &__subscribe-h1{
+        font-size: 75px;
+        font-weight: 400;
+        color: #F64B3C;
+        margin-bottom: 29.8px;
+        @include respond(tab-port){
+            font-size: 60px;
+            line-height: 50px;
+        }
+        @include respond(phone-2){
+            font-size: 45px;
+        }
+    }
+    &__subscribe-p{
+        font-size: 29.72px;
+        font-weight: 400;
+        color: #F64B3C;
+        line-height: 29.72px;
+        @include respond(tab-port){
+            font-size: 26px;
+        }
+        @include respond(phone-2){
+            font-size: 22px;
+        }
+    }
+    &__search-container{
+        margin-top: 83px;
+        width: 100%;
+        display: flex;
+        border-radius: 50px;
+        // border: 1px solid red;
+    }
+    &__subscribe-input{
+        width: 100%;
+        height: 65px;
+        background-color: #fff;
+        color: #835E3F;
+        font-weight: 300;
+        outline: none;
+        border: 1px solid transparent ;
+        border-top-left-radius: 50px;
+        border-bottom-left-radius: 50px;
+        padding-right: 20px;
+        padding-left: 20px;
+        font-size: 20px;
+        @include respond(tab-port){
+            height: 50px;
+        }
+    }
+    &__search-button{
+        width: 100%;
+        max-width: 222px;
+        background-color: #F64B3C;
+        color: #fff;
+        cursor: pointer;
+        height: 65px;
+        border-top-right-radius: 50px;
+        border-bottom-right-radius: 50px;
+        border: 1px solid transparent;
+        font-weight: 400;
+        font-size: 25px;
+        @include respond(tab-port){
+            height: 50px;
+            font-size: 20px;
+            max-width: 200px;
+        }
+        @include respond(phone){
+            max-width: 150px;
+            // background-color: red;
+        }
+        
+    }
+}
