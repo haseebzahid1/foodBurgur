@@ -1,0 +1,122 @@
+.package{
+    padding-top: 66.6px;
+    padding-bottom: 80px;
+    background-color: antiquewhite;
+   &__package-h1{
+    font-size: 75px;
+    color:#F64B3C ;   
+    font-weight: 400;
+    text-align: center;
+    @include respond(phone){
+        font-size: 55px;
+        line-height: 53px;
+    }
+   }
+    &__package-container{
+       margin-top: 138px;
+       @include respond(phone){
+           margin-top: 60px;
+       }
+   }
+    &__package-flex{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        max-width: 1216px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 15px;
+        padding-right: 15px;
+        @include respond(phone){
+            flex-wrap: wrap;
+        }
+   }
+    &__package-col-1{
+        width: 100%;
+        max-width: 336px;
+        padding: 21.6px 21.6px 24px 21.6px;
+        text-align: center;
+        background-color: white;
+        margin-left: auto;
+        margin-right: auto;
+        @include respond(phone-2){
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+        @include respond(phone){
+            max-width: 80%;
+        }
+   }
+   &__package-mlr{
+    margin-left: 10px;
+    margin-right: 10px;
+    @include respond(phone){
+        margin: 10px auto 10px auto;
+    }
+   }
+    &__package-h3{
+        font-size: 33.35px;
+        color:#F64B3C ;   
+        font-weight: 400;
+        margin-bottom: 31.7px;
+        @include respond(phone-2){
+            font-size: 28px;
+        }
+    }
+    &__package-img{
+        width: 104px;
+        height: 102px;
+        @include respond(phone-2){
+            width: 90px;
+            height: 86px;
+        }
+    }
+    &__package-span{
+        font-size: 33.35px;
+        color:#F64B3C ;  
+        display: block; 
+        margin-top: 29.8px;
+        @include respond(phone-2){
+            font-size: 28px;
+        }
+    }
+    &__package-p{
+        margin-top: 9.6px;
+        margin-bottom: 31px;
+        font-size: 20px;
+        color:#F64B3C ;  
+        @include respond(phone-2){
+            font-size: 18px;
+        }
+    }
+    &__btn-container{
+        
+    }
+    &__package-btn{
+       width: 100%;
+       max-width: 290px;
+       background-color: #f7594b; 
+       color: #fff;
+       font-size: 22.57px;
+       display: block;
+       padding-bottom: 15px;
+       padding-top: 15px;
+       text-align: center;
+       border-radius: 50px;
+       transition:  all 0.3s ease;
+       ;
+       @include respond(phone-2){
+        font-size: 18px;
+        padding-bottom: 10px;
+       padding-top: 10px;
+    }
+    @include respond(phone){
+        margin-left: auto;
+        margin-right: auto
+    }
+       &:hover{
+           
+           background-color: #ff6253; 
+       }
+    }
+}
