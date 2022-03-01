@@ -1,0 +1,118 @@
+.big-burger{
+    &__burger-bg-img{
+        background-image: url(../../img/Content.png);
+        background-size: cover;
+        width: 100%;
+       min-height: 829px;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    &__big-burger-container{
+        width: 100%;
+        max-width: 1170px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 203px 15px 157px 15px;
+        // border: 1px solid blue;
+        @include respond(phone-1){
+            padding-top: 80px;
+            padding-bottom: 80px;
+        }
+    }
+    &__big-burger-flex{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+        @include respond(phone-1){
+            flex-direction: column;
+            justify-content: center;
+        
+        }
+    }
+    &__big-burger-col-2{
+        width: 100%;
+        max-width: 576px;
+        // border: 1px solid red;
+        padding-right: 50px;
+        @include respond(phone-1){
+            margin-bottom: 3rem;
+            padding-right: 0px;
+        text-align: center;
+        }
+    }
+   
+   
+
+
+    &__big-burger-img{
+        max-width: 474px;
+        @include respond(tab-land-6){
+            max-width: 400px;
+        }
+        @include respond(tab-port){
+            max-width: 360px;
+        }
+        @include respond(zero-size){
+            width: 100%;
+            max-width:  300px;
+        }
+        
+    }
+    &__big-burger-h1{
+        // margin-top: 75px;
+        font-size: 75px;
+        font-weight: 400;
+        color: #F64B3C;
+        line-height: 90px;
+        @include respond(tab-land-6){
+            // margin-top: 55px;
+            font-size: 60px;
+        }
+        @include respond(zero-size){
+            font-size: 40px;
+        }
+    }
+    &__big-burger-p{
+        font-size: 29.72px;
+        font-weight: 400;
+        color: #F64B3C;
+        line-height: 35.67px;
+        margin-top: 34.2px;
+        margin-bottom: 27.4px;
+        @include respond(tab-land-6){
+            font-size: 26.5px;
+            // margin-bottom: 55px;
+        }
+        @include respond(phone-1){
+            margin-top: 0px;
+            // margin-bottom: 45px;
+        }
+        @include respond(zero-size){
+            font-size: 20px;
+            line-height: 30px;
+        }
+    }
+
+    &__big-burger-btn{
+        display: block;
+        color: #fff;
+        font-size:25px;
+        font-weight: bold;
+        background-color: #F64B3C;
+        max-width:322px;
+        text-align: center;
+        line-height: 65px;
+        border-radius: 50px;
+        @include respond(tab-land-6){
+            font-size: 22px;
+            line-height: 55px;
+        }
+        @include respond(phone-1){
+            font-size: 19px;
+            line-height: 45px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+}

@@ -1,9 +1,8 @@
 .best-burger{
     background-color:#F64B3C ;
-    min-height: 200px;
     &__best-burger-container{
         width: 100%;
-        max-width: 1140px;
+        max-width: 1170px;
         margin-left: auto;
         margin-right: auto;
         padding: 159px 15px 135px 15px;
@@ -23,14 +22,11 @@
     }
     &__best-burger-img{
         max-width: 474px;
-        // min-height: 274px;
         @include respond(tab-land-6){
             max-width: 400px;
-            // background-color: white;
         }
         @include respond(tab-port){
             max-width: 360px;
-            // background-color: pink;
         }
         @include respond(zero-size){
             width: 100%;
