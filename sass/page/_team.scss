@@ -1,6 +1,17 @@
 .team{
+   
+    &__team-background-img{
+            width: 100%;
+            max-width: 100%;
+            min-height:796px;
+            background-position: 10% 90%;
+            background-size:cover;
+            background-image: url(../../img/team-bg.png);
+            background-repeat: no-repeat;
+        
+    }  
     &__team-container{
-        padding: 70px 15px 90px 15px;  
+        padding: 68px 15px 0px 15px;  
     }
     &__our-cheaf{
         width: 100%;
@@ -13,11 +24,13 @@
         font-size: 63px;
         margin-bottom: 25.6px;
         color: #F64B3C;
+        font-weight: 400;
     }
     &__team-p{
         font-size: 25.23px;
         line-height: 30.27px;
         color: #F64B3C;
+        
     }
     &__our-team{
         margin-top: 75px;

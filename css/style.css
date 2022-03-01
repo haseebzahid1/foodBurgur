@@ -9,7 +9,6 @@ body {
   font-size: 15px;
   line-height: 26px;
   font-weight: 400;
-  letter-spacing: 0px;
   font-family: 'Archivo', sans-serif; }
 
 .img-fluid {
@@ -131,19 +130,11 @@ p, h1, h2, h3, h4 {
 .barry__background-img {
   background-repeat: no-repeat;
   width: 100%;
-  height: 796px;
+  min-height: 790px;
   background-size: cover;
-  background-image: url(../../img/pexels-pixabay-33162.jpg);
+  background-image: url(../../img/Card.png);
   background-position: center;
   position: relative; }
-  .barry__background-img:before {
-    width: 100%;
-    height: 100%;
-    content: '';
-    position: absolute;
-    background-color: #f64c3ccc;
-    top: 0;
-    left: 0; }
 
 .barry__barry-container {
   width: 100%;
@@ -249,8 +240,17 @@ p, h1, h2, h3, h4 {
       .subscribe__search-button {
         max-width: 150px; } }
 
+.team__team-background-img {
+  width: 100%;
+  max-width: 100%;
+  min-height: 796px;
+  background-position: 10% 90%;
+  background-size: cover;
+  background-image: url(../../img/team-bg.png);
+  background-repeat: no-repeat; }
+
 .team__team-container {
-  padding: 70px 15px 90px 15px; }
+  padding: 68px 15px 0px 15px; }
 
 .team__our-cheaf {
   width: 100%;
@@ -262,7 +262,8 @@ p, h1, h2, h3, h4 {
 .team__team-h1 {
   font-size: 63px;
   margin-bottom: 25.6px;
-  color: #F64B3C; }
+  color: #F64B3C;
+  font-weight: 400; }
 
 .team__team-p {
   font-size: 25.23px;
@@ -328,6 +329,9 @@ p, h1, h2, h3, h4 {
   padding-top: 70px;
   padding-bottom: 183px;
   background-color: #F64B3C; }
+  @media (max-width: 790px) {
+    .count {
+      padding-bottom: 70px; } }
   .count__count-statistics {
     width: 100%;
     max-width: 740px;
@@ -340,10 +344,16 @@ p, h1, h2, h3, h4 {
     font-size: 62.26px;
     margin-bottom: 24px;
     color: #fff; }
+    @media (max-width: 480px) {
+      .count__count-h1 {
+        font-size: 45px; } }
   .count__count-p {
     font-size: 24.68px;
     color: #fff;
     line-height: 29.61px; }
+    @media (max-width: 480px) {
+      .count__count-p {
+        font-size: 20px; } }
   .count__count-flex {
     margin-top: 60px;
     display: flex;
@@ -360,6 +370,9 @@ p, h1, h2, h3, h4 {
         flex-direction: column;
         justify-content: center;
         align-items: center; } }
+    @media (max-width: 480px) {
+      .count__count-flex {
+        margin-top: 30px; } }
   .count__count-down, .count__count-text-span {
     font-size: 101px;
     color: #fff; }
@@ -525,3 +538,99 @@ p, h1, h2, h3, h4 {
       margin-right: auto; } }
   .package__package-btn:hover {
     background-color: #ff6253; }
+
+.best-burger {
+  background-color: #F64B3C;
+  min-height: 200px; }
+  .best-burger__best-burger-container {
+    width: 100%;
+    max-width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 159px 15px 135px 15px; }
+    @media (max-width: 790px) {
+      .best-burger__best-burger-container {
+        padding-top: 80px;
+        padding-bottom: 80px; } }
+  .best-burger__best-burger-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    @media (max-width: 790px) {
+      .best-burger__best-burger-flex {
+        flex-direction: column;
+        justify-content: center; } }
+  .best-burger__best-burger-img {
+    max-width: 474px; }
+    @media (max-width: 1239px) {
+      .best-burger__best-burger-img {
+        max-width: 400px; } }
+    @media (max-width: 970px) {
+      .best-burger__best-burger-img {
+        max-width: 360px; } }
+    @media (max-width: 480px) {
+      .best-burger__best-burger-img {
+        width: 100%;
+        max-width: 300px; } }
+  .best-burger__best-burger-col-2 {
+    padding-left: 30px;
+    max-width: 581.5px; }
+    @media (max-width: 790px) {
+      .best-burger__best-burger-col-2 {
+        text-align: center;
+        margin-top: 20px; } }
+    @media (max-width: 480px) {
+      .best-burger__best-burger-col-2 {
+        padding-left: 0; } }
+  .best-burger__best-burger-h1 {
+    font-size: 75px;
+    font-weight: 300;
+    color: #fff;
+    line-height: 90px; }
+    @media (max-width: 1239px) {
+      .best-burger__best-burger-h1 {
+        font-size: 60px; } }
+    @media (max-width: 480px) {
+      .best-burger__best-burger-h1 {
+        font-size: 40px; } }
+  .best-burger__best-burger-p {
+    font-size: 29.75px;
+    font-weight: 400;
+    color: #fff;
+    font-weight: 400;
+    line-height: 35.67px;
+    margin-top: 32.2px;
+    margin-bottom: 62px;
+    font-family: 'Nunito', sans-serif; }
+    @media (max-width: 1239px) {
+      .best-burger__best-burger-p {
+        font-size: 26.5px;
+        margin-bottom: 55px; } }
+    @media (max-width: 790px) {
+      .best-burger__best-burger-p {
+        margin-top: 0px;
+        margin-bottom: 45px; } }
+    @media (max-width: 480px) {
+      .best-burger__best-burger-p {
+        font-size: 20px;
+        line-height: 30px; } }
+  .best-burger__best-burger-btn {
+    display: block;
+    color: #F64B3C;
+    font-size: 25px;
+    font-weight: bold;
+    background-color: #fff;
+    max-width: 322px;
+    text-align: center;
+    line-height: 65px;
+    border-radius: 50px; }
+    @media (max-width: 1239px) {
+      .best-burger__best-burger-btn {
+        font-size: 22px;
+        line-height: 55px; } }
+    @media (max-width: 790px) {
+      .best-burger__best-burger-btn {
+        font-size: 19px;
+        line-height: 45px;
+        margin-left: auto;
+        margin-right: auto; } }

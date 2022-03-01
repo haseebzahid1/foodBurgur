@@ -2,6 +2,9 @@
     padding-top: 70px;
     padding-bottom: 183px;
     background-color: #F64B3C;
+    @include respond(phone-1){
+        padding-bottom: 70px;
+    }
     &__count-statistics{
         width: 100%;
         max-width: 740px;
@@ -17,11 +20,17 @@
         font-size: 62.26px;
         margin-bottom: 24px;
         color: #fff;
+        @include respond(zero-size){
+            font-size: 45px;
+        }
     }
     &__count-p{
         font-size: 24.68px;
         color: #fff;
         line-height: 29.61px;
+        @include respond(zero-size){
+            font-size: 20px;
+        }
     }
     &__count-flex{
         margin-top: 60px;
@@ -38,6 +47,9 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
+        }
+        @include respond(zero-size){
+            margin-top: 30px;
         }
     }
     &__count-down,&__count-text-span{
