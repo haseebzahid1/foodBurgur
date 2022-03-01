@@ -1,8 +1,19 @@
 .package{
-    padding-top: 66.6px;
-    padding-bottom: 80px;
-    background-color: antiquewhite;
+  
+    // background-color: antiquewhite;
+
+    &__package-background-img{
+        width: 100%;
+        // max-width: 100%;
+        // min-height:832px;
+        background-position: center;
+        background-size:cover;
+        background-image: url(../../img/package-bg.png);
+        background-repeat: no-repeat;
+    }
    &__package-h1{
+         padding-top: 70.6px;
+   
     font-size: 75px;
     color:#F64B3C ;   
     font-weight: 400;
@@ -14,6 +25,7 @@
    }
     &__package-container{
        margin-top: 138px;
+        padding-bottom: 84px;
        @include respond(phone){
            margin-top: 60px;
        }

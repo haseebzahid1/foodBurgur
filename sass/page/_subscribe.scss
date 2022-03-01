@@ -1,19 +1,31 @@
 .subscribe{
-    background-color: whitesmoke;
+    background-color: #F6EEDF;
+    // padding-bottom: 46px;
+    &__subscribe-background-img{
+        width: 100%;
+        max-width: 1301px;
+        margin-left: auto;
+        margin-right: auto;
+        background-position: center;
+        background-size:cover;
+        background-image: url(../../img/subscribe-bg.png);
+        background-repeat: no-repeat;
+        min-height: 891px;
+    }
     &__subscribe-container{
-        padding: 208px 15px 202px 15px;
+        padding: 295px 15px 208px 15px;
         width: 100%;
         max-width: 800px;
         margin-left: auto;
         margin-right: auto;
-        border: 1px solid red;
         text-align: center;
     }
     &__subscribe-h1{
+        // padding-top: 182px;
         font-size: 75px;
         font-weight: 400;
         color: #F64B3C;
-        margin-bottom: 29.8px;
+        margin-bottom: 33.8px;
         @include respond(tab-port){
             font-size: 60px;
             line-height: 50px;
