@@ -1,0 +1,106 @@
+.navbar{
+    z-index: 999;
+    width: 100%;
+    z-index: 999;
+    height: 115px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    &__navbar-container{
+        padding-left: 69px;
+        padding-right: 29px;
+        padding-top: 60px;
+        @include respond(tab-port-1){
+            padding-top: 40px;
+            padding-left: 30px;
+        }
+    }
+    &__navbar-flex{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__navbar-logo-div{
+        padding-right: 2rem;
+        @include respond(tab-port-1){
+            padding-right: 0;
+        }
+    }
+    &__navbar-logo{
+        max-width: 93px;
+        height: 79px;
+    }
+    &__navbar-list{
+        display: flex;
+        // flex: 1;
+        width: 100%;
+        max-width: 980px;
+        justify-content: space-between;
+        margin: 0;
+      
+        // overflow-y: auto;
+        // border: 1px solid red;
+        @include respond(tab-port-1){
+            position: fixed;
+            top: 0;
+            left: -100%;
+            background-color: pink;
+            display: block;
+            max-width: 360px;
+            height: 100vh;
+            padding-left: 0;
+            padding-top: 3rem;
+            transition: all 0.3s ease;
+        }
+    }
+    &__navbar-li{
+        margin-left: 10px;
+        margin-right: 10px;
+        @include respond(tab-port-1){
+            // border-top: 1px solid red;
+            border-bottom: 1px solid red;
+            display: block;
+            margin-left: 15px;
+            margin-right: 15px;
+            &:not(:first-child){
+                margin-top: 2rem;
+            }
+        }
+    }
+    &__navbar-a{
+        color: #fff;
+        display: inline-block;
+        font-family: 'Poppins', sans-serif;
+        font-weight: bold;
+        font-size: 25px;
+    }
+    &__navbar-input{
+        display: none;
+      
+    }
+    &__btnn{
+        color: #fff;
+        font-size: 30px;
+        cursor: pointer;
+        display: none;
+        @include respond(tab-port-1){
+            display: block;
+        }
+    }
+    &__menu-btn{
+        position: absolute;
+        font-size: 20px;
+        right: 30px;
+        color: #fff;
+        top: 3.2rem;
+    }
+    &__cancel-btn{
+        position: absolute;
+        top: 10px;
+        right: 30px;
+     }
+}
+
+#menu-btn:checked ~ .navbar-list{
+    left:0;
+ }

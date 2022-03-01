@@ -6,12 +6,12 @@
         background-image: url(../../img/header_main-bg.png);
         background-repeat: no-repeat;
         background-position: 0% 100%;
-        // background-size: cover;
         @include respond(phone){
             min-height: 776px;
         }
     }
     &__cashback-content{
+        display: none;
         padding-top: 206px;
         padding-left:83.4px;
         @include respond(phone){
@@ -54,7 +54,6 @@
             font-size: 20px;
         }
         @include respond(zero-size){
-            // font-size: 40px;
             line-height: 30px;
         }
     }
@@ -76,8 +75,6 @@
         @include respond(phone){
             line-height: 45px;
             max-width: 280px;
-            // margin-left: auto;
-            // margin-right: auto;
         }
     }
 }
