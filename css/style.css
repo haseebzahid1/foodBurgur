@@ -767,3 +767,78 @@ p, h1, h2, h3, h4 {
       font-size: 19px;
       color: #222222;
       display: block; }
+
+.cashback__cashback-main-bg {
+  min-height: 995px;
+  width: 100%;
+  background-image: url(../../img/header_main-bg.png);
+  background-repeat: no-repeat;
+  background-position: 0% 100%; }
+  @media (max-width: 640px) {
+    .cashback__cashback-main-bg {
+      min-height: 776px; } }
+
+.cashback__cashback-content {
+  padding-top: 206px;
+  padding-left: 83.4px; }
+  @media (max-width: 640px) {
+    .cashback__cashback-content {
+      padding-left: 54px;
+      padding-top: 100px; } }
+  @media (max-width: 480px) {
+    .cashback__cashback-content {
+      padding-left: 15px; } }
+
+.cashback__cashback-h1, .cashback__cashback-h2 {
+  color: #fff;
+  font-size: 91px;
+  line-height: 96px; }
+  @media (max-width: 767px) {
+    .cashback__cashback-h1, .cashback__cashback-h2 {
+      font-size: 75px; } }
+  @media (max-width: 640px) {
+    .cashback__cashback-h1, .cashback__cashback-h2 {
+      font-size: 55px;
+      line-height: 76px; } }
+  @media (max-width: 480px) {
+    .cashback__cashback-h1, .cashback__cashback-h2 {
+      font-size: 40px;
+      line-height: 60px; } }
+
+.cashback__cashback-p {
+  max-width: 637px;
+  color: #fff;
+  font-size: 32px;
+  line-height: 39px;
+  margin-top: 28px;
+  margin-bottom: 54px;
+  padding-right: 1rem; }
+  @media (max-width: 767px) {
+    .cashback__cashback-p {
+      font-size: 28px; } }
+  @media (max-width: 640px) {
+    .cashback__cashback-p {
+      font-size: 20px; } }
+  @media (max-width: 480px) {
+    .cashback__cashback-p {
+      line-height: 30px; } }
+
+.cashback__cashback-btn {
+  display: block;
+  width: 100%;
+  max-width: 322px;
+  background-color: #F64B3C;
+  color: #fff;
+  font-size: 25px;
+  text-align: center;
+  line-height: 65px;
+  border-radius: 50px;
+  font-weight: bold; }
+  @media (max-width: 767px) {
+    .cashback__cashback-btn {
+      font-size: 22px;
+      line-height: 55px; } }
+  @media (max-width: 640px) {
+    .cashback__cashback-btn {
+      line-height: 45px;
+      max-width: 280px; } }
