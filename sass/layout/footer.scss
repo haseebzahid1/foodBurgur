@@ -1,8 +1,19 @@
-
 .footer{
     padding-top: 223px;
     padding-bottom: 284px;
     background-color: #222222;
+    @include respond(tab-port){
+        padding-top: 123px;
+        padding-bottom: 184px;
+    }
+    @include respond(phone-2){
+        padding-top: 70px;
+        padding-bottom: 80px;
+    }
+    @include respond(zero-size){
+        padding-top: 40px;
+        padding-bottom: 50px;
+    }
     &__footer-container{
         width: 100%;
         max-width: 1241.29px;
@@ -10,14 +21,15 @@
         padding-left: 15px;
         margin-left: auto;
         margin-right: auto;
+        
         // border: 1px solid red;
     }
     &__footer-d-flex{
         display: flex;
-        // flex-wrap: wrap;
-        @include respond(tab-port){
-            flex-wrap: wrap;
-        }
+        justify-content: space-between;
+       @include respond(tab-port){
+           flex-wrap: wrap;
+       }
     }
     &__col-1{
         width: 100%;
@@ -29,31 +41,38 @@
             padding-right:30px;
             // background-color: blue;
         }
+       
         @include respond(tab-port){
             max-width: 100%;
-            padding-right:30px;
+            padding-right:30x;
+            padding-left:30x;
+            text-align: center;
             // background-color: red;
         }
         
+        @include respond(zero-size){
+            padding-right: 5px;
+            padding-left: 5px;
+        }
     }
     &__col-2{
         width: 100%;
         max-width: 16.666666%;
         // border: 1px solid blue;
         @include respond(tab-land-5){
-            padding-right:30px;
-            // background-color: blue;
-            // border: 1px solid peru,
+            padding-right:0px;
         }
         @include respond(tab-port){
             max-width: 33.333333%;
-            padding-right:30px;
-            // background-color: blue;
-            // border: 1px solid peru,
+            padding-right:0px;
         }
         @include respond(phone-2){
             max-width: 100%;
+            &:not(:first-child){
+                margin-top: 12px;
+            }
         }
+        
     }
     &__pl-5{
         padding-left:27px !important;
@@ -63,22 +82,21 @@
         }
         @include respond(tab-port){
             padding-left: 0px !important;
-            // background-color: red;
         }
     }
-    // &__footer__second_col-2{
-    //     width: 100%;
-    //     max-width: 194px;
-    // }
+    
     &__footer-h1{
         font-size: 31.47px;
         color: #fff;
+        margin-bottom: 23.6px ;
         @include respond(tab-port-1){
             font-size: 28px;
-        }
-        @include respond(tab-port-1){
             text-align: center;
         }
+        @include respond(phone-2){
+            margin-bottom: 8px;
+        }
+       
     }
     &__footer-p{
         font-size: 23.6px;
@@ -97,6 +115,11 @@
     &__footer-li{
         line-height: 41.59px;
         // text-align: center;
+      @include respond(phone-2){
+        &:last-child{
+            margin-bottom: 8px;
+        }
+      }
        
         @include respond(tab-port-1){
             text-align: center;
@@ -114,7 +137,13 @@
         
     }
     &__social-d-flex{
+        margin-top:38px ;
         display: flex;
+        @include respond(tab-port){
+            justify-content: center;
+            margin-bottom: 2rem;
+        }
+        
     }
     &__social-container{
         // padding: 11.5px 10px 9.5px 10px;
