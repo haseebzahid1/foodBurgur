@@ -6,17 +6,24 @@
         background-image: url(../../img/header_main-bg.png);
         background-repeat: no-repeat;
         background-position: 0% 100%;
+        @include respond(tab-port-1){
+            background-position: 20% 100%;
+        }
+        @include respond(phone-2){
+            background-position: 40% 100%;
+        }
         @include respond(phone){
             min-height: 776px;
+            background-position: 40% 60%;
         }
     }
     &__cashback-content{
-        display: none;
+        // display: none;
         padding-top: 206px;
         padding-left:83.4px;
         @include respond(phone){
             padding-left: 54px;
-            padding-top: 100px;
+            padding-top: 170px;
         }
         @include respond(zero-size){
             padding-left: 15px;
