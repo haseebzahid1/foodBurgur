@@ -10,15 +10,7 @@
         background-size:cover;
         background-image: url(../../img/package-bg.png);
         background-repeat: no-repeat;
-        @include respond(tab-land-6){
-            background-position: 80% 0%;
-        }
-        @include respond(tab-port){
-            background-position: 100% 0%;
-        }
-        @include respond(zero-size){
-            background-position: 96% 0%;
-        }
+       
     }
    &__package-h1{
          padding-top: 70.6px;

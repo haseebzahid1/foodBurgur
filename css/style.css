@@ -182,6 +182,15 @@ p, h1, h2, h3, h4 {
   background-size: cover;
   background-image: url(../../img/team-bg.png);
   background-repeat: no-repeat; }
+  @media (max-width: 1239px) {
+    .team__team-background-img {
+      background-position: 40% 0%; } }
+  @media (max-width: 970px) {
+    .team__team-background-img {
+      background-position: 80% 0%; } }
+  @media (max-width: 480px) {
+    .team__team-background-img {
+      background-position: 97% 100%; } }
 
 .team__team-container {
   padding: 68px 15px 0px 15px; }
@@ -360,15 +369,6 @@ p, h1, h2, h3, h4 {
   background-size: cover;
   background-image: url(../../img/package-bg.png);
   background-repeat: no-repeat; }
-  @media (max-width: 1239px) {
-    .package__package-background-img {
-      background-position: 80% 0%; } }
-  @media (max-width: 970px) {
-    .package__package-background-img {
-      background-position: 100% 0%; } }
-  @media (max-width: 480px) {
-    .package__package-background-img {
-      background-position: 96% 0%; } }
 
 .package__package-h1 {
   padding-top: 70.6px;
