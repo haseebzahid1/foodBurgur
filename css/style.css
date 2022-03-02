@@ -763,7 +763,7 @@ p, h1, h2, h3, h4 {
         max-width: 360px;
         height: 100vh;
         padding-left: 0;
-        padding-top: 1rem;
+        padding-top: 1.5rem;
         transition: all 0.3s ease; } }
   .navbar__navbar-li {
     margin-left: 10px;
@@ -818,6 +818,22 @@ p, h1, h2, h3, h4 {
 
 #menu-btn:checked ~ .navbar-list {
   left: 0; }
+
+.back-to-top {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  z-index: 100; }
+
+.back-to-top a {
+  width: 2.5rem;
+  height: 2.5rem;
+  line-height: 2.5rem;
+  color: #9F5BA4 !important;
+  display: block;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 50px; }
 
 .footer {
   padding-top: 223px;
@@ -923,7 +939,7 @@ p, h1, h2, h3, h4 {
     color: #fff; }
     .footer__footer-a:hover {
       transition: all 0.5s ease;
-      color: #e4e4e4; }
+      color: #c9c8c8; }
   .footer__social-d-flex {
     margin-top: 38px;
     display: flex; }

@@ -4,14 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Text css</title>
+    <title>Food Burger</title>
+    <!-- <link rel="icon" href="./img/titlelogo.png" sizes="1600x1600" type="image/png">  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./css/style.css">
 
 </head>
-<body data-spy="scroll">
-    <nav class="navbar"> 
-        <div class="navbar__navbar-container nav-container">
+<body data-spy="scroll" data-target="#main-nav" id="home" >
+    <div id="backToTop"></div>
+    <nav class="navbar" id="main-nav" > 
+        <div class="navbar__navbar-container nav-container" >
             <div class="navbar__navbar-flex">
                 <div class="navbar__navbar-logo-div">
                     <!-- <img class="navbar__navbar-logo navbar-logo" src="./img/Logo.png" alt=""> -->
@@ -32,19 +34,19 @@
                         <i class="fa fa-times"></i>
                     </label>
                     <li class="navbar__navbar-li navbar-li">
-                        <a href="#." class="navbar__navbar-a navbar-a">HOME</a>
+                        <a href="#home" class="navbar__navbar-a navbar-a">HOME</a>
                     </li>
                     <li class="navbar__navbar-li navbar-li">
-                        <a href="#." class="navbar__navbar-a navbar-a">PRODUCT</a>
+                        <a href="#best_burger" class="navbar__navbar-a navbar-a">PRODUCT</a>
                     </li>
                     <li class="navbar__navbar-li navbar-li">
-                        <a href="#." class="navbar__navbar-a navbar-a">PROMO</a>
+                        <a href="#promo" class="navbar__navbar-a navbar-a">PROMO</a>
                     </li>
                     <li class="navbar__navbar-li navbar-li">
-                        <a href="#." class="navbar__navbar-a navbar-a">ABOUT</a>
+                        <a href="#about" class="navbar__navbar-a navbar-a">ABOUT</a>
                     </li>
                     <li class="navbar__navbar-li navbar-li">
-                        <a href="#." class="navbar__navbar-a navbar-a">CONTACT</a>
+                        <a href="#contact" class="navbar__navbar-a navbar-a">CONTACT</a>
                     </li>
                 </ul>
             </div>
@@ -102,7 +104,7 @@
             </div>
         </div>
     </section> 
-    <section class="best-burger"> 
+    <section class="best-burger" id="best_burger"> 
         <div class="best-burger__best-burger-container">
             <div class="best-burger__best-burger-flex">
                 <div class="best-burger__best-burger-col-1">
@@ -135,7 +137,7 @@
             </div>
         </div>
     </section> 
-     <section class="count">
+     <section class="count" id="promo">
         <div class="count__count-statistics">
             <h1 class="count__count-h1">Statistics</h1>
             <p class="count__count-p">
@@ -170,7 +172,7 @@
     
      
    
-    <section class="package">
+    <section class="package" id="about">
         <div class="package__package-background-img">
            <h1 class="package__package-h1">Popular Package</h1>
            <div class="package__package-container">
@@ -239,7 +241,7 @@
             </div>
         </div>
     </div>
-    <footer class="footer">
+    <footer class="footer" id="contact">
        <div class="footer__footer-container">
            <div class="footer__footer-inner">
                <div class="footer__footer-d-flex">
@@ -329,13 +331,47 @@
            </div>
        </div>
    </footer> 
+   <div class="back-to-top">
+    <a href="#backToTop"><i class="fa fa-chevron-up"></i></a>
+  </div>
    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
   <!-- counter -->
+  <script>
+    $(window).scroll(function () {
+   if ($(this).scrollTop() >= 500) {
+       $(".back-to-top").fadeIn(200);
+   } else {
+       $(".back-to-top").fadeOut(200);
+   } 
+})
+</script>
+  <script>
+  
+    // Init Scrollspy
+    $('body').scrollspy({
+        target: '#main-nav'
+    });
 
+    // Smooth Scrolling
+    $("#main-nav a").on('click', function(event) {
+        if (this.hash !== "") {
+            event.preventDefault();
+
+            const hash = this.hash;
+
+            $('html, body').animate({
+                scrollTop: $(hash).offset().top
+            }, 800, function() {
+
+                window.location.hash = hash;
+            });
+        }
+    });
+</script>
    <script>
     $(document).ready(function(){
         $(".counter").counterUp({
@@ -351,5 +387,6 @@
         nav.classList.toggle("sticky", window.scrollY > 0);
     })
 </script> 
+
 </body>
 </html>
