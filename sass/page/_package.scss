@@ -5,11 +5,20 @@
     &__package-background-img{
         width: 100%;
         // max-width: 100%;
-        // min-height:832px;
+        min-height:832px;
         background-position: center;
         background-size:cover;
         background-image: url(../../img/package-bg.png);
         background-repeat: no-repeat;
+        @include respond(tab-land-6){
+            background-position: 80% 0%;
+        }
+        @include respond(tab-port){
+            background-position: 100% 0%;
+        }
+        @include respond(zero-size){
+            background-position: 96% 0%;
+        }
     }
    &__package-h1{
          padding-top: 70.6px;
@@ -51,6 +60,7 @@
         background-color: white;
         margin-left: auto;
         margin-right: auto;
+         box-shadow: 0 2px 15px 0 rgba(0, 0, 0, 0.2%);
         @include respond(phone-2){
             padding-left: 10px;
             padding-right: 10px;

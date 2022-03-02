@@ -355,10 +355,20 @@ p, h1, h2, h3, h4 {
 
 .package__package-background-img {
   width: 100%;
+  min-height: 832px;
   background-position: center;
   background-size: cover;
   background-image: url(../../img/package-bg.png);
   background-repeat: no-repeat; }
+  @media (max-width: 1239px) {
+    .package__package-background-img {
+      background-position: 80% 0%; } }
+  @media (max-width: 970px) {
+    .package__package-background-img {
+      background-position: 100% 0%; } }
+  @media (max-width: 480px) {
+    .package__package-background-img {
+      background-position: 96% 0%; } }
 
 .package__package-h1 {
   padding-top: 70.6px;
@@ -398,7 +408,8 @@ p, h1, h2, h3, h4 {
   text-align: center;
   background-color: white;
   margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+  box-shadow: 0 2px 15px 0 rgba(0, 0, 0, 0.2); }
   @media (max-width: 767px) {
     .package__package-col-1 {
       padding-left: 10px;
@@ -574,7 +585,19 @@ p, h1, h2, h3, h4 {
   width: 100%;
   min-height: 829px;
   background-repeat: no-repeat;
-  background-position: center; }
+  background-position: 0% 100%; }
+  @media (max-width: 1239px) {
+    .big-burger__burger-bg-img {
+      background-position: 0% 100%; } }
+  @media (max-width: 970px) {
+    .big-burger__burger-bg-img {
+      background-position: 5% 100%; } }
+  @media (max-width: 767px) {
+    .big-burger__burger-bg-img {
+      background-position: 20% 100%; } }
+  @media (max-width: 480px) {
+    .big-burger__burger-bg-img {
+      background-position: 50% 100%; } }
 
 .big-burger__big-burger-container {
   width: 100%;
