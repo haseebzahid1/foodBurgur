@@ -83,12 +83,16 @@
         width: 100%;
         // padding-left: 10px;
         height: 238px;
+        @include respond(phone){
+            height: 258px;
+        }
         
         img{
             width: 100%;
             height: 100%;
             background-size: cover;
-           
+           object-fit: cover;
+           background-position: 30% 30%;
         }
     }
     &__team-h2{
