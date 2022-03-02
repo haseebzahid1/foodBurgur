@@ -39,6 +39,10 @@ p, h1, h2, h3, h4 {
   background-image: url(../../img/Card.png);
   background-position: center;
   position: relative; }
+  @media (max-width: 640px) {
+    .barry__background-img {
+      min-height: 626px;
+      background-position: 50% 50%; } }
 
 .barry__barry-container {
   width: 100%;
@@ -46,15 +50,25 @@ p, h1, h2, h3, h4 {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  padding-top: 280px;
-  position: relative;
-  z-index: 2; }
+  padding-top: 280px; }
+  @media (max-width: 640px) {
+    .barry__barry-container {
+      padding-top: 120px; } }
 
 .barry__barry-p {
   margin-bottom: 125px;
   color: #fff;
   font-size: 36.46px;
-  line-height: 43.75px; }
+  line-height: 43.75px;
+  padding-bottom: 60px; }
+  @media (max-width: 640px) {
+    .barry__barry-p {
+      font-size: 30.46px; } }
+  @media (max-width: 480px) {
+    .barry__barry-p {
+      font-size: 26px;
+      padding-bottom: 30px;
+      margin-bottom: 65px; } }
 
 .barry__barry-h3 {
   color: #fff;

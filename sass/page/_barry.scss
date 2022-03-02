@@ -8,7 +8,11 @@
         background-image: url(../../img/Card.png);
         background-position: center;
         position: relative;
-        // background-position: 80% 50%;
+        
+        @include respond(phone){
+            min-height: 626px;
+            background-position: 50% 50%;
+        }
 
     }
     &__barry-container{
@@ -19,15 +23,31 @@
         // border: 1px solid red;
         text-align: center;
         padding-top: 280px;
-        // padding-bottom: 225px;
-        position: relative;
-        z-index: 2;
+        @include respond(phone){
+            padding-top: 120px;
+        }
+        @include respond(zero-size){
+           
+        }
     }
     &__barry-p{
         margin-bottom: 125px;
         color: #fff;
         font-size: 36.46px;
         line-height: 43.75px;
+        padding-bottom: 60px;
+       
+        @include respond(phone){
+            font-size: 30.46px;
+            // background-color: red;
+        }
+        @include respond(zero-size){
+            font-size: 26px;
+            padding-bottom: 30px;
+            margin-bottom: 65px;
+            // background-color: palegoldenrod;
+        }
+        
     }
     &__barry-h3{
         color: #fff;
