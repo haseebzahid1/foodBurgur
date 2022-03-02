@@ -2,15 +2,15 @@
     padding-top: 223px;
     padding-bottom: 284px;
     background-color: #222222;
-    @include respond(tab-port){
+    @include respond (tab-port){
         padding-top: 123px;
         padding-bottom: 184px;
     }
-    @include respond(phone-2){
+    @include respond (phone-2){
         padding-top: 70px;
         padding-bottom: 80px;
     }
-    @include respond(zero-size){
+    @include respond (zero-size){
         padding-top: 40px;
         padding-bottom: 50px;
     }
@@ -44,8 +44,8 @@
        
         @include respond(tab-port){
             max-width: 100%;
-            padding-right:30x;
-            padding-left:30x;
+            padding-right:30px;
+            padding-left:30px;
             text-align: center;
             // background-color: red;
         }

@@ -11,6 +11,18 @@
         background-image: url(../../img/subscribe-bg.png);
         background-repeat: no-repeat;
         min-height: 891px;
+        @include respond(tab-port){
+            background-position: 20% 0%;
+        }
+        @include respond(phone-2){
+            background-position: 30% 0%;
+        }
+        @include respond(zero-size){
+            background-position: center;
+        }
+        @include respond(phone){
+            min-height: 626px;
+        }
     }
     &__subscribe-container{
         padding: 295px 15px 208px 15px;
@@ -19,6 +31,10 @@
         margin-left: auto;
         margin-right: auto;
         text-align: center;
+        @include respond(phone){
+            padding-top: 70px;
+            padding-bottom: 90px;
+        }
     }
     &__subscribe-h1{
         // padding-top: 182px;
